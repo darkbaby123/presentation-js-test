@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test:node": "./node_modules/.bin/mocha",
+    "test:browser": "./node_modules/.bin/webpack && open test/index-simple.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "expect": "^1.20.2",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "webpack": "^1.13.2"
   }
 }
