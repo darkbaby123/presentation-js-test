@@ -1,4 +1,4 @@
-const add = require('../src/simple')
+import add from '../src/simple'
 
 describe('simple', () => {
   it('add', () => {
