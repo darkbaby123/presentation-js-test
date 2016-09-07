@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "serve": "./node_modules/.bin/webpack-dev-server --config webpack/dev.js",
     "test:node": "./node_modules/.bin/mocha",
-    "test:browser": "./node_modules/.bin/webpack && open test/index-simple.html"
+    "test:browser": "./node_modules/.bin/webpack --config webpack/test.js && open test/index-simple.html"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,13 @@
     "expect": "^1.20.2",
     "mocha": "^3.0.2",
     "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0"
   }
 }
