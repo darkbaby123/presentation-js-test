@@ -18,6 +18,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "enzyme": "^2.4.1",
     "expect": "^1.20.2",
+    "jsdom": "^9.5.0",
     "mocha": "^3.0.2",
     "mocha-loader": "^0.7.1",
     "mocha-webpack": "^0.6.0",

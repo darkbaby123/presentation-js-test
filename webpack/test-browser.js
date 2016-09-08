@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const config = require('./base')
 
 module.exports = Object.assign({}, config, {
@@ -22,4 +23,12 @@ module.exports = Object.assign({}, config, {
     port: '8081',
     contentBase: path.resolve(__dirname, '../test/'),
   },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        BROWSER: true,
+      }
+    }),
+  ],
 })
