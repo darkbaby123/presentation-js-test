@@ -1,0 +1,3 @@
+--webpack-config webpack/test-node.js
+--require test/support/expect.js
+test/**/*.spec.js

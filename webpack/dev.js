@@ -1,21 +1,16 @@
 const path = require('path')
+const config = require('./base')
 
-module.exports = {
+module.exports = Object.assign({}, config, {
   entry: './src/index.js',
 
   output: {
     filename: 'bundle-dev.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     publicPath: '/dist/',
-  },
-
-  module: {
-    loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: 'babel' },
-    ],
   },
 
   devServer: {
     inline: true,
   },
-}
+})
