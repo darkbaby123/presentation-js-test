@@ -6,7 +6,7 @@
   "scripts": {
     "serve": "./node_modules/.bin/webpack-dev-server --config webpack/dev.js",
     "test:node": "rm -rf .tmp/mocha-webpack && ./node_modules/.bin/mocha-webpack",
-    "test:browser": "./node_modules/.bin/webpack --config webpack/test.js && open test/index-simple.html"
+    "test:browser": "./node_modules/.bin/webpack-dev-server --config webpack/test-browser.js"
   },
   "author": "",
   "license": "ISC",
